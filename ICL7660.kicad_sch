@@ -532,20 +532,23 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_SwitchedCapacitor:ICL7660"
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
 			(exclude_from_sim no)
-			(in_bom yes)
+			(in_bom no)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -6.35 11.43 0)
+			(property "Reference" "H"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "ICL7660"
-				(at 3.81 11.43 0)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -553,6 +556,86 @@
 				)
 			)
 			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Regulator_SwitchedCapacitor:ICL7660"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U1"
+				(at 0 15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "ICL7660"
+				(at 0 12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_DIP:CERDIP-8_W7.62mm_SideBrazed_Socket"
 				(at 2.54 -2.54 0)
 				(effects
 					(font
@@ -629,7 +712,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin no_connect line
 					(at -10.16 0 0)
 					(length 2.54)
 					(name "OSC"
@@ -647,7 +730,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin no_connect line
 					(at -10.16 -5.08 0)
 					(length 2.54)
 					(name "LV"
@@ -860,18 +943,119 @@
 			)
 			(embedded_fonts no)
 		)
-	)
-	(junction
-		(at 170.18 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0c62dec0-58c5-4691-a45c-878eb5847191")
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
 		(at 161.29 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "241b6944-b731-43dc-b1b8-366704d52ee5")
+	)
+	(junction
+		(at 106.68 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "27827459-aee4-43b1-8f72-5f412fa3b94d")
 	)
 	(junction
 		(at 170.18 86.36)
@@ -928,6 +1112,12 @@
 		(uuid "e4481f3b-152f-4796-984c-099740fdcb62")
 	)
 	(junction
+		(at 139.7 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f265c71b-4608-4f91-87dc-a2335f502fab")
+	)
+	(junction
 		(at 92.71 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -935,7 +1125,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 86.36) (xy 114.3 86.36)
+			(xy 92.71 86.36) (xy 106.68 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1015,7 +1205,17 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 109.22) (xy 146.05 109.22)
+			(xy 106.68 86.36) (xy 114.3 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22968a12-88d6-4747-9a83-e1bfa1a47275")
+	)
+	(wire
+		(pts
+			(xy 124.46 109.22) (xy 139.7 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1092,6 +1292,16 @@
 			(type default)
 		)
 		(uuid "81a129ff-7b49-41f7-8663-98fee9c500b2")
+	)
+	(wire
+		(pts
+			(xy 139.7 109.22) (xy 146.05 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "821837cf-c209-4017-b8fb-476985face5e")
 	)
 	(wire
 		(pts
@@ -1280,7 +1490,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm"
 			(at 92.71 102.87 0)
 			(effects
 				(font
@@ -1539,6 +1749,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 106.68 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "297773bb-b95f-4034-862c-88423449759a")
+		(property "Reference" "#FLG01"
+			(at 106.68 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 106.68 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 106.68 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f544eca9-0f41-4a8e-9e0e-df5bad094991")
+		)
+		(instances
+			(project ""
+				(path "/51b95304-6a99-4d0e-afa5-a0b26fd808aa"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 170.18 95.25 0)
 		(unit 1)
@@ -1743,6 +2019,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 85.09 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "559fa050-978f-4463-a73b-75786a03f807")
+		(property "Reference" "H1"
+			(at 87.63 128.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 87.63 130.8099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 85.09 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 85.09 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/51b95304-6a99-4d0e-afa5-a0b26fd808aa"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
 		(at 179.07 86.36 0)
 		(mirror y)
@@ -1752,7 +2092,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7a47520e-8f05-470c-8d08-5540d8a80473")
-		(property "Reference" "J5"
+		(property "Reference" "J4"
 			(at 178.435 81.28 0)
 			(effects
 				(font
@@ -1801,7 +2141,7 @@
 		(instances
 			(project ""
 				(path "/51b95304-6a99-4d0e-afa5-a0b26fd808aa"
-					(reference "J5")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -1875,6 +2215,7 @@
 	(symbol
 		(lib_id "Device:C_Small_US")
 		(at 161.29 95.25 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1882,7 +2223,7 @@
 		(dnp no)
 		(uuid "ac927a05-aa32-4af6-af70-9c59b183636e")
 		(property "Reference" "C5"
-			(at 163.83 94.1069 0)
+			(at 163.83 96.3931 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1891,7 +2232,7 @@
 			)
 		)
 		(property "Value" "100u"
-			(at 163.83 96.6469 0)
+			(at 163.83 93.8531 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1899,7 +2240,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm"
 			(at 161.29 95.25 0)
 			(effects
 				(font
@@ -1942,32 +2283,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 170.18 114.3 90)
+		(lib_id "Mechanical:MountingHole")
+		(at 109.22 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "b5047486-e900-41b2-ba39-38a03ec48376")
-		(property "Reference" "J4"
-			(at 165.1 113.665 0)
+		(fields_autoplaced yes)
+		(uuid "bb4fe5d3-4ad1-40bd-b074-5de487996a14")
+		(property "Reference" "H2"
+			(at 111.76 128.2699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 167.64 113.665 0)
+		(property "Value" "MountingHole"
+			(at 111.76 130.8099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
-			(at 170.18 114.3 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 109.22 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1976,7 +2320,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 170.18 114.3 0)
+			(at 109.22 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1984,22 +2328,19 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 170.18 114.3 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 109.22 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "e4a9ec02-6202-4b25-a334-854c84e54efd")
 		)
 		(instances
 			(project "ICL7660"
 				(path "/51b95304-6a99-4d0e-afa5-a0b26fd808aa"
-					(reference "J4")
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -2033,7 +2374,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 92.71 90.17 0)
 			(effects
 				(font
@@ -2070,6 +2411,72 @@
 			(project "ICL7660"
 				(path "/51b95304-6a99-4d0e-afa5-a0b26fd808aa"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 139.7 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb9e4c13-0f68-4bf5-9214-8c4efb4e824e")
+		(property "Reference" "#FLG02"
+			(at 139.7 107.315 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 139.7 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 139.7 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "adba5422-b8d1-4a70-af85-96ee0d85cb00")
+		)
+		(instances
+			(project ""
+				(path "/51b95304-6a99-4d0e-afa5-a0b26fd808aa"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -2240,7 +2647,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 154.94 86.36 0)
 			(effects
 				(font
